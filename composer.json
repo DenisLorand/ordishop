@@ -1,0 +1,15 @@
+{
+    "name": "kercode/ordishop",
+    "authors": [
+        {
+            "name": "DenisLorand",
+            "email": "denis.lorand@yahoo.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Project\\" : "./app"
+        }
+    },
+    "require": {}
+}
