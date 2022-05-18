@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /indexAdmin.php
+Sitemap: https://www.greta-bretagne-sud.fr/stagiaires/denis-lorand/sitemap.xml
