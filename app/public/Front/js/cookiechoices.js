@@ -28,6 +28,7 @@
 
  */
 
+ // A l'origine les variables sont toutes déclarées par var. S'agissant d'un script sous licence je ne les ai pas redéclarées en let.
 
  (function(window) {
 
