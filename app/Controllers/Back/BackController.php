@@ -27,12 +27,11 @@ class BackController{
 
         $isPasswordCorrect = password_verify($pass, $result['pass']); // password_verify est une fonction native de PHP
 
-        $_SESSION['mail'] = $result['mail'];
+        if ($isPasswordCorrect){ $_SESSION['mail'] = $result['mail'];
+            
         $_SESSION['pass'] = $result['pass'];
         $_SESSION['id'] = $result['id'];
         $_SESSION['firstname'] = $result['firstname'];
-
-        if ($isPasswordCorrect){
             require 'app/Views/Back/tableauDeBord.php';
         } else{
             echo 'Vos identifiants sont incorrects';
