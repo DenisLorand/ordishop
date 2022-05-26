@@ -1,5 +1,14 @@
 <?php ob_start(); ?>
 
+<?php
+  // On initialise la session d'identification administration
+  session_start();
+  // On vérifie si l'administrateur est connecté, sinon on le redirige vers la page de connexion
+  if(!isset($_SESSION["mail"]) && !isset ($_SESSION["pass"])){
+    header("Location: indexAdmin.php");
+    exit(); 
+  }
+?>
 
 <?php $product = $getProduct->fetch();  ?>
 
